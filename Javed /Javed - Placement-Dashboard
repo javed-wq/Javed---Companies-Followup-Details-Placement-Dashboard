@@ -1,40 +1,13 @@
-index.html
 <!DOCTYPE html>
-<html>
+<index.html>
 <head>
-Placement Dashboard
+    <title>Jaipuria Placement Dashboard</title>
 </head>
-
 <body>
 
-  <h1>Jaipuria Placement Dashboard</h1>
+    <h1>Jaipuria Placement Dashboard</h1>
 
-  <p id="status">Loading data...</p>
-
-  <script>
-
-    const API_URL = "https://script.google.com/a/macros/jaipuria.ac.in/s/AKfycbyykFyagWP_MwyBmLmPWeNklHGsKz_Do419fIIIZzWOAtIMakZydlb9XhPWnQDCwpZ4/exec";
-
-    fetch(API_URL)
-      .then(response => response.json())
-      .then(data => {
-
-        console.log(data);
-
-        document.getElementById("status").innerText =
-          "Google Sheet connected successfully!";
-
-      })
-      .catch(error => {
-
-        console.error(error);
-
-        document.getElementById("status").innerText =
-          "Unable to connect to Google Sheet.";
-
-      });
-
-  </script>
+    <p>My dashboard is working!</p>
 
 </body>
 </html>
